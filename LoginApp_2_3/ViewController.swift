@@ -9,11 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var forgotPassButton: UIButton!
+    @IBOutlet var forgotNameButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+//        forgotPassButton.titleLabel?.adjustsFontSizeToFitWidth = true
+//        forgotNameButton.titleLabel?.adjustsFontSizeToFitWidth = true
+        
+        
     }
-
-
+    
 }
 
