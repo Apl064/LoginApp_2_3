@@ -25,6 +25,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         welcomeVC.welcomeText = "Welcome, \(userNameTF.text ?? "") !!!"
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
     @IBAction func userNameButtonPressed() {
         showAlert(title: "Oops!", message: "Your name is \(userName) 🙁")
     }
