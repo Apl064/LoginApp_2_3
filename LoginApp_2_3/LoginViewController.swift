@@ -14,12 +14,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     private let userName = "tim"
     private let userPass = "zaraza"
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
         
-    }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return}
         welcomeVC.welcomeText = "Welcome, \(userNameTF.text ?? "") !!!"
@@ -41,6 +36,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if userNameTF.text == userName && passwordTF.text == userPass {
             performSegue(withIdentifier: "segueLoginToWelcome", sender: nil)
         } else {
+            passwordTF.text?.removeAll()
             showAlert(title: "Invalid login or password",
                       message: "Please, enter correct login and password")
         }
@@ -69,11 +65,7 @@ extension LoginViewController {
         let alert = UIAlertController(title: title,
                                       message: message,
                                       preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            if self.userNameTF.text != self.userName || self.passwordTF.text != self.userPass {
-                self.passwordTF.text = ""
-            }
-        }
+        let okAction = UIAlertAction(title: "OK", style: .default)
 
         alert.addAction(okAction)
         present(alert, animated: true)
