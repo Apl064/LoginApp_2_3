@@ -9,14 +9,17 @@ import UIKit
 
 class AboutViewController: UIViewController {
     
+    // MARK: - IB Outlets
     @IBOutlet var aboutLabel: UILabel!
     
+    // MARK: - Properties
     var user: User!
     
+    // MARK: - Private properties
     private let primaryColor = UIColor(
-        red: 17/255,
-        green: 142/255,
-        blue: 233/255,
+        red: 243/255,
+        green: 243/255,
+        blue: 243/255,
         alpha: 1
     )
     
@@ -31,5 +34,11 @@ class AboutViewController: UIViewController {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
         aboutLabel.text = "\(user.persona.aboutUser)"
+    }
+    
+    // MARK: Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let infoVC = segue.destination as? PhotoViewController else { return }
+        infoVC.user = user
     }
 }

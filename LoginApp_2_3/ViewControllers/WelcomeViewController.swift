@@ -9,11 +9,14 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
+    // MARK: - IB Outlets
     @IBOutlet var welcomeLabel: UILabel!
     @IBOutlet var handLabel: UILabel!
     
+    // MARK: - Properties
     var user: User!
     
+    // MARK: - Private properties
     private let primaryColor = UIColor(
         red: 17/255,
         green: 142/255,

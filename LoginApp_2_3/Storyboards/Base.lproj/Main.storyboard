@@ -175,7 +175,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="About" id="GtC-L0-bDS">
                         <barButtonItem key="rightBarButtonItem" title="More info" id="477-UG-Cbc">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="cX8-38-9Sz" kind="show" id="pb3-62-3hJ"/>
                             </connections>
@@ -197,8 +196,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="5RB-uc-Cbb">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5RB-uc-Cbb">
                                 <rect key="frame" x="16" y="91" width="288" height="562"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5RB-uc-Cbb" secondAttribute="height" multiplier="144:281" id="HsP-GA-ele"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qwi-5V-4Qp"/>
@@ -246,9 +248,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Gkp-TD-zIb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -261,7 +260,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="750" height="562"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
