@@ -14,6 +14,8 @@
 		AB45626D27D6B16F004A2E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB45626C27D6B16F004A2E44 /* Assets.xcassets */; };
 		AB45627027D6B16F004A2E44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB45626E27D6B16F004A2E44 /* LaunchScreen.storyboard */; };
 		AB45627827D930E6004A2E44 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB45627727D930E6004A2E44 /* WelcomeViewController.swift */; };
+		ABB74E6D27DE69D5006A0B4C /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB74E6C27DE69D5006A0B4C /* Persona.swift */; };
+		ABB74E6F27DE84AF006A0B4C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB74E6E27DE84AF006A0B4C /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		AB45626F27D6B16F004A2E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB45627127D6B16F004A2E44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB45627727D930E6004A2E44 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		ABB74E6C27DE69D5006A0B4C /* Persona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
+		ABB74E6E27DE84AF006A0B4C /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 			children = (
 				AB45626727D6B167004A2E44 /* LoginViewController.swift */,
 				AB45627727D930E6004A2E44 /* WelcomeViewController.swift */,
+				ABB74E6E27DE84AF006A0B4C /* AboutViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -106,6 +111,7 @@
 		ABB74E6B27DE3BF9006A0B4C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ABB74E6C27DE69D5006A0B4C /* Persona.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,9 +187,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB74E6F27DE84AF006A0B4C /* AboutViewController.swift in Sources */,
 				AB45626827D6B167004A2E44 /* LoginViewController.swift in Sources */,
 				AB45627827D930E6004A2E44 /* WelcomeViewController.swift in Sources */,
 				AB45626427D6B167004A2E44 /* AppDelegate.swift in Sources */,
+				ABB74E6D27DE69D5006A0B4C /* Persona.swift in Sources */,
 				AB45626627D6B167004A2E44 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

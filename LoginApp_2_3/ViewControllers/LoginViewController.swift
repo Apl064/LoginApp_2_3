@@ -14,18 +14,23 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var passwordTF: UITextField!
     
     // MARK: - Private properties
-    private let userName = "tim"
-    private let userPass = "zaraza"
+    private let user = User.createUser()
     
     // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.userName = userName
+        guard let tabBarController = segue.destination as? UITabBarController,
+              let viewControllers = tabBarController.viewControllers else { return }
+        
+        for viewController in viewControllers {
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.user = user
+            }
+        }
     }
     
     // MARK: IBActions
     @IBAction func loginButtonPressed() {
-        guard userNameTF.text == userName, passwordTF.text == userPass else {
+        guard userNameTF.text == user.login, passwordTF.text == user.password else {
             showAlert(title: "Invalid login or password",
                       message: "Please, enter correct login and password",
                       textField: passwordTF)
@@ -36,8 +41,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func showAutorizationData(_ sender: UIButton) {
         sender.tag == 0
-            ? showAlert(title: "Oops!", message: "Your name is \(userName) 🙁")
-            : showAlert(title: "Oops!", message: "Your password is \(userPass) 🧐")
+        ? showAlert(title: "Oops!", message: "Your name is \(user.login) 🙁")
+        : showAlert(title: "Oops!", message: "Your password is \(user.password) 🧐")
     }
     
     @IBAction func unwind(for segue: UIStoryboardSegue) {

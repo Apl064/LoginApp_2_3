@@ -93,7 +93,7 @@
             </objects>
             <point key="canvasLocation" x="136.875" y="138.38028169014083"/>
         </scene>
-        <!--About-->
+        <!--Welcome-->
         <scene sceneID="3Qa-K3-OEJ">
             <objects>
                 <viewController id="lEh-CJ-Zzs" customClass="WelcomeViewController" customModule="LoginApp_2_3" customModuleProvider="target" sceneMemberID="viewController">
@@ -138,7 +138,7 @@
                             <constraint firstItem="qmJ-eA-v7d" firstAttribute="trailing" secondItem="hOB-Yu-89d" secondAttribute="trailing" constant="90" id="rOv-3m-Iga"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="About" image="person.fill" catalog="system" id="465-oy-QGj"/>
+                    <tabBarItem key="tabBarItem" title="Welcome" image="person.fill" catalog="system" id="465-oy-QGj"/>
                     <navigationItem key="navigationItem" id="NZ5-j5-ERz"/>
                     <connections>
                         <outlet property="handLabel" destination="fA7-4u-dEa" id="mtW-vA-02d"/>
@@ -153,7 +153,7 @@
         <!--About-->
         <scene sceneID="XWn-vl-dgq">
             <objects>
-                <viewController id="Odm-Ra-v0Z" sceneMemberID="viewController">
+                <viewController id="Odm-Ra-v0Z" customClass="AboutViewController" customModule="LoginApp_2_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KDb-bk-qio">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -206,11 +206,11 @@
             </objects>
             <point key="canvasLocation" x="969.375" y="138.38028169014083"/>
         </scene>
-        <!--Item-->
+        <!--User-->
         <scene sceneID="CZz-5C-p1C">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WRW-jX-b2H" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="person.fill" catalog="system" id="ezK-Ls-Vcx"/>
+                    <tabBarItem key="tabBarItem" title="User" image="person.fill" catalog="system" id="ezK-Ls-Vcx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Gkp-TD-zIb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
