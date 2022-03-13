@@ -157,16 +157,33 @@
                     <view key="view" contentMode="scaleToFill" id="KDb-bk-qio">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eG0-Ih-CzP">
+                                <rect key="frame" x="16" y="151" width="288" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ywj-Xp-gx5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eG0-Ih-CzP" firstAttribute="top" secondItem="ywj-Xp-gx5" secondAttribute="top" constant="60" id="2D4-bt-vVU"/>
+                            <constraint firstItem="eG0-Ih-CzP" firstAttribute="leading" secondItem="ywj-Xp-gx5" secondAttribute="leading" constant="16" id="cGK-pX-Uey"/>
+                            <constraint firstItem="ywj-Xp-gx5" firstAttribute="trailing" secondItem="eG0-Ih-CzP" secondAttribute="trailing" constant="16" id="jBH-Aw-iCP"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About" id="GtC-L0-bDS">
                         <barButtonItem key="rightBarButtonItem" title="More info" id="477-UG-Cbc">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="cX8-38-9Sz" kind="show" id="pb3-62-3hJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="aboutLabel" destination="eG0-Ih-CzP" id="SXq-p0-0D5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9zb-fu-sQe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -175,18 +192,31 @@
         <!--Photo-->
         <scene sceneID="Qsh-YU-abP">
             <objects>
-                <viewController id="cX8-38-9Sz" sceneMemberID="viewController">
+                <viewController id="cX8-38-9Sz" customClass="PhotoViewController" customModule="LoginApp_2_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G91-uD-Lg7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="5RB-uc-Cbb">
+                                <rect key="frame" x="16" y="91" width="288" height="562"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="qwi-5V-4Qp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qwi-5V-4Qp" firstAttribute="trailing" secondItem="5RB-uc-Cbb" secondAttribute="trailing" constant="16" id="G4c-vl-Rws"/>
+                            <constraint firstItem="5RB-uc-Cbb" firstAttribute="top" secondItem="qwi-5V-4Qp" secondAttribute="top" id="Kln-ud-ND4"/>
+                            <constraint firstItem="5RB-uc-Cbb" firstAttribute="leading" secondItem="qwi-5V-4Qp" secondAttribute="leading" constant="16" id="lDo-rA-cZq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Photo" id="fSU-Da-RKD"/>
+                    <connections>
+                        <outlet property="imageView" destination="5RB-uc-Cbb" id="6KI-f6-Awx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eDW-z5-qG0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3036" y="936"/>
+            <point key="canvasLocation" x="3035.625" y="935.91549295774644"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="07y-xh-mCT">
@@ -194,6 +224,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="StE-2B-J2F" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8L0-Br-jnn">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -206,15 +237,18 @@
             </objects>
             <point key="canvasLocation" x="969.375" y="138.38028169014083"/>
         </scene>
-        <!--User-->
+        <!--About-->
         <scene sceneID="CZz-5C-p1C">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WRW-jX-b2H" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="User" image="person.fill" catalog="system" id="ezK-Ls-Vcx"/>
+                    <tabBarItem key="tabBarItem" title="About" image="person.fill" catalog="system" id="ezK-Ls-Vcx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Gkp-TD-zIb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -227,6 +261,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="750" height="562"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

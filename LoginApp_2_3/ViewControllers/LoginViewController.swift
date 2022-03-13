@@ -24,6 +24,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         for viewController in viewControllers {
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.user = user
+            } else if let navigationController  = viewController as? UINavigationController {
+                let aboutVC = navigationController.topViewController as? AboutViewController
+                aboutVC?.user = user
             }
         }
     }

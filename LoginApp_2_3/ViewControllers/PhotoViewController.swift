@@ -1,5 +1,5 @@
 //
-//  AboutViewController.swift
+//  PhotoViewController.swift
 //  LoginApp_2_3
 //
 //  Created by Pavel Metelin on 3/13/22.
@@ -7,9 +7,9 @@
 
 import UIKit
 
-class AboutViewController: UIViewController {
+class PhotoViewController: UIViewController {
     
-    @IBOutlet var aboutLabel: UILabel!
+    @IBOutlet var imageView: UIImageView!
     
     var user: User!
     
@@ -30,6 +30,6 @@ class AboutViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
-        aboutLabel.text = "\(user.persona.aboutUser)"
+        //imageView.image.
     }
 }

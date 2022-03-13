@@ -16,6 +16,7 @@
 		AB45627827D930E6004A2E44 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB45627727D930E6004A2E44 /* WelcomeViewController.swift */; };
 		ABB74E6D27DE69D5006A0B4C /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB74E6C27DE69D5006A0B4C /* Persona.swift */; };
 		ABB74E6F27DE84AF006A0B4C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB74E6E27DE84AF006A0B4C /* AboutViewController.swift */; };
+		ABB74E7127DE8BDC006A0B4C /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB74E7027DE8BDC006A0B4C /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		AB45627727D930E6004A2E44 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		ABB74E6C27DE69D5006A0B4C /* Persona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
 		ABB74E6E27DE84AF006A0B4C /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		ABB74E7027DE8BDC006A0B4C /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				AB45626727D6B167004A2E44 /* LoginViewController.swift */,
 				AB45627727D930E6004A2E44 /* WelcomeViewController.swift */,
 				ABB74E6E27DE84AF006A0B4C /* AboutViewController.swift */,
+				ABB74E7027DE8BDC006A0B4C /* PhotoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				AB45626827D6B167004A2E44 /* LoginViewController.swift in Sources */,
 				AB45627827D930E6004A2E44 /* WelcomeViewController.swift in Sources */,
 				AB45626427D6B167004A2E44 /* AppDelegate.swift in Sources */,
+				ABB74E7127DE8BDC006A0B4C /* PhotoViewController.swift in Sources */,
 				ABB74E6D27DE69D5006A0B4C /* Persona.swift in Sources */,
 				AB45626627D6B167004A2E44 /* SceneDelegate.swift in Sources */,
 			);
