@@ -58,16 +58,56 @@
 		AB45626227D6B167004A2E44 /* LoginApp_2_3 */ = {
 			isa = PBXGroup;
 			children = (
-				AB45626327D6B167004A2E44 /* AppDelegate.swift */,
-				AB45626527D6B167004A2E44 /* SceneDelegate.swift */,
-				AB45626727D6B167004A2E44 /* LoginViewController.swift */,
-				AB45627727D930E6004A2E44 /* WelcomeViewController.swift */,
-				AB45626927D6B167004A2E44 /* Main.storyboard */,
-				AB45626C27D6B16F004A2E44 /* Assets.xcassets */,
-				AB45626E27D6B16F004A2E44 /* LaunchScreen.storyboard */,
-				AB45627127D6B16F004A2E44 /* Info.plist */,
+				ABB74E6727DE3B31006A0B4C /* ViewControllers */,
+				ABB74E6B27DE3BF9006A0B4C /* Model */,
+				ABB74E6A27DE3BDA006A0B4C /* Storyboards */,
+				ABB74E6927DE3BC6006A0B4C /* Resources */,
+				ABB74E6827DE3B4D006A0B4C /* App */,
 			);
 			path = LoginApp_2_3;
+			sourceTree = "<group>";
+		};
+		ABB74E6727DE3B31006A0B4C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AB45626727D6B167004A2E44 /* LoginViewController.swift */,
+				AB45627727D930E6004A2E44 /* WelcomeViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ABB74E6827DE3B4D006A0B4C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AB45626327D6B167004A2E44 /* AppDelegate.swift */,
+				AB45626527D6B167004A2E44 /* SceneDelegate.swift */,
+				AB45627127D6B16F004A2E44 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ABB74E6927DE3BC6006A0B4C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AB45626C27D6B16F004A2E44 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ABB74E6A27DE3BDA006A0B4C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				AB45626927D6B167004A2E44 /* Main.storyboard */,
+				AB45626E27D6B16F004A2E44 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ABB74E6B27DE3BF9006A0B4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +335,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VBYD7798S4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginApp_2_3/Info.plist;
+				INFOPLIST_FILE = LoginApp_2_3/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -324,7 +364,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VBYD7798S4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginApp_2_3/Info.plist;
+				INFOPLIST_FILE = LoginApp_2_3/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
