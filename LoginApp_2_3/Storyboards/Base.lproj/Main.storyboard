@@ -197,18 +197,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5RB-uc-Cbb">
-                                <rect key="frame" x="16" y="91" width="288" height="562"/>
+                                <rect key="frame" x="16" y="161" width="288" height="288"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="5RB-uc-Cbb" secondAttribute="height" multiplier="144:281" id="HsP-GA-ele"/>
+                                    <constraint firstAttribute="width" constant="288" id="YWK-65-LyG"/>
+                                    <constraint firstAttribute="height" constant="288" id="zg1-SN-iHe"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qwi-5V-4Qp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="qwi-5V-4Qp" firstAttribute="trailing" secondItem="5RB-uc-Cbb" secondAttribute="trailing" constant="16" id="G4c-vl-Rws"/>
-                            <constraint firstItem="5RB-uc-Cbb" firstAttribute="top" secondItem="qwi-5V-4Qp" secondAttribute="top" id="Kln-ud-ND4"/>
-                            <constraint firstItem="5RB-uc-Cbb" firstAttribute="leading" secondItem="qwi-5V-4Qp" secondAttribute="leading" constant="16" id="lDo-rA-cZq"/>
+                            <constraint firstItem="5RB-uc-Cbb" firstAttribute="centerY" secondItem="qwi-5V-4Qp" secondAttribute="centerY" id="4Zp-El-cGN"/>
+                            <constraint firstItem="5RB-uc-Cbb" firstAttribute="centerX" secondItem="qwi-5V-4Qp" secondAttribute="centerX" id="7K1-O9-MIM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Photo" id="fSU-Da-RKD"/>

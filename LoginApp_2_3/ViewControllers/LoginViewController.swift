@@ -18,15 +18,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     // MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let tabBarController = segue.destination as? UITabBarController,
-              let viewControllers = tabBarController.viewControllers else { return }
+        guard let tabBarController = segue.destination as? UITabBarController else { return }
+        guard let viewControllers = tabBarController.viewControllers else { return }
         
         for viewController in viewControllers {
             if let welcomeVC = viewController as? WelcomeViewController {
                 welcomeVC.user = user
             } else if let navigationController  = viewController as? UINavigationController {
-                let aboutVC = navigationController.topViewController as? AboutViewController
-                aboutVC?.user = user
+                guard let aboutVC = navigationController.topViewController as? AboutViewController else { return }
+                aboutVC.user = user
             }
         }
     }

@@ -10,7 +10,11 @@ import UIKit
 class PhotoViewController: UIViewController {
     
     // MARK: - IB Outlets
-    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var imageView: UIImageView! {
+        didSet {
+            imageView.layer.cornerRadius = imageView.frame.height / 2
+        }
+    }
     
     // MARK: - Properties
     var user: User!
